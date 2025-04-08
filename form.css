@@ -22,13 +22,14 @@ body{
 h2{
     padding: 16px 0 25px 16px;
 }
-input,select {
+input, select {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
     font-size: 16px;
     background-color: rgba(213, 227, 231, 0.8);
-    
+    border: none;
+    outline: 1px solid black;
 }
 label{
     width: 150px;
