@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(225, 241, 241);
+}
+.container{
+    margin:auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0;
+
+}
+.form-page{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0 15px 0 15px;
+}
+h2{
+    padding: 16px 0 25px 16px;
+}
+input,select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgba(213, 227, 231, 0.8);
+    
+}
+label{
+    width: 150px;
+    font-size: 18px;
+    margin: 12px;
+}
+.col{
+    display: flex;
+    margin: 10px;
+}.row {
+    width: 100%;
+    display: flex;
+}
+.butn01 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* #btn {
+    padding: 25px 50px 0 50px;
+    font-size: 16px;
+    border-radius: 10px;
+} */
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 15px 50px 15px 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.table-page{
+    width: 100%;
+    border: 2px solid black;
+    padding: 0 15px 40px 15px;
+}
+table, th, td {
+    border: 1px solid;
+}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.edit,.dlete{
+    width: 40px;
+    cursor: pointer;
+}

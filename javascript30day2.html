@@ -58,8 +58,9 @@
         }
     });
     console.log(comment);
-    
 
+    
+//////////ARROW functioon
     const text = comments.find(comment => comment.id === 2039842)
     console.log(text);
     
@@ -67,6 +68,17 @@
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
+
+    const commentslice = comments.findIndex(comment => comment.id === 2039842)
+    console.log(commentslice);
+    
+
+    const newcomments = [
+      ...comments.slice(0,commentslice),
+      ...comments.slice(commentslice, + 1),
+    ];
+    console.table(comments);
+
 
   </script>
 </body>
