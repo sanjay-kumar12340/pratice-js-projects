@@ -7,7 +7,7 @@ let roleEle = document.getElementById("role");
 let addressEle = document.getElementById("address");
 let numberEle = document.getElementById("number");
 let genderEle = document.getElementById("gender");
-// let result = document.getElementById("result");
+let result = document.getElementById("result");
 
 // table div 
 

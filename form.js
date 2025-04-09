@@ -16,6 +16,8 @@ let formEle = document.getElementById('form')
 
 formEle.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    
     
     if (firstNameEle.value !== '') {
         console.log(`firstNameEle : ${firstNameEle.value}`);
@@ -116,7 +118,7 @@ function randerList(){
         dletebtn.src = '/bin.png';
         dletebtn.classList = 'dlete';
         dletebtn.setAttribute = ("data-id" , tableFields.id);
-        dletebtn.onclick = () => deleteTableFild(tableFields.id)  ;     
+        dletebtn.onclick = () => dleteTableFild(tableFields.id)  ;     
    
        tbody.appendChild(tr);
        tr.appendChild(tdFirstName);
@@ -133,9 +135,10 @@ function randerList(){
  });
 
  
- // Function to edit data
-function editData(id) {
-    const data = allEle.find(item => item.id === id);
+ 
+ // edit data////////////
+function editTableFild(id) {
+    const data = allEle.find(table => table.id === id);
 
     firstNameEle.value = data.firstname;
     lastNameEle.value = data.lastname;
