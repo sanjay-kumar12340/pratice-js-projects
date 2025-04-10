@@ -143,28 +143,28 @@ function randerTable(table) {
 
 // search input 
 
-function searchTable() {
-    let searchQuery = searchEle.value.toLowerCase();
+// function searchTable() {
+//     let searchQuery = searchEle.value.toLowerCase();
 
-    let filterResult = allEle.filter(user => {
-        return (
-            user.firstName.toLowerCase().includes(searchQuery) ||
-            user.lastName.toLowerCase().includes(searchQuery) ||
-            user.email.toLowerCase().includes(searchQuery) ||
-            user.age.toLowerCase().includes(searchQuery) ||
-            user.role.toLowerCase().includes(searchQuery) ||
-            user.number.toLowerCase().includes(searchQuery) ||
-            user.gender.toLowerCase().includes(searchQuery) ||
-            user.address.toLowerCase().includes(searchQuery)
-        );
-
-
-    });
+//     let filterResult = allEle.filter(user => {
+//         return (
+//             user.firstName.toLowerCase().includes(searchQuery) ||
+//             user.lastName.toLowerCase().includes(searchQuery) ||
+//             user.email.toLowerCase().includes(searchQuery) ||
+//             user.age.toLowerCase().includes(searchQuery) ||
+//             user.role.toLowerCase().includes(searchQuery) ||
+//             user.number.toLowerCase().includes(searchQuery) ||
+//             user.gender.toLowerCase().includes(searchQuery) ||
+//             user.address.toLowerCase().includes(searchQuery)
+//         );
 
 
-    randerTable(filterResult)
-}
-searchEle.addEventListener("input", searchTable);
+//     });
+
+
+//     randerTable(filterResult)
+// }
+// searchEle.addEventListener("input", searchTable);
 
 
 formEle.addEventListener("submit", (event) => {
